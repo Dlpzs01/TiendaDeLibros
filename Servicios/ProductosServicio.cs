@@ -13,7 +13,6 @@ public enum Operaciones
 
 public class ProductosServicio
 {
-
     public void MostraMenu()
     {
         Console.WriteLine("CRUD Producto");
