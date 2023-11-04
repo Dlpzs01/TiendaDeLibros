@@ -49,7 +49,23 @@ public class ProductosServicio
 
     public void Crear()
     {
-        
+        Console.WriteLine("Creando el producto");
+        Console.WriteLine("Ingrese el nombre: ");
+        string nombre = Console.ReadLine() ?? string.Empty;
+        Console.WriteLine("Ingrese la descripcion: ");
+        string descripcion = Console.ReadLine() ?? string.Empty;
+        Guid id = Guid.NewGuid();
+
+        var producto = new Producto
+        {
+            Id = id,
+            Nombre = nombre,
+            Descripcion = descripcion
+        };
+
+        Console.WriteLine("Id: " + producto.Id);
+        Console.WriteLine("Nombre: " + producto.Nombre);
+        Console.WriteLine("Descripcion: " + producto.Descripcion);
     }
 
     private void Actualizar()
