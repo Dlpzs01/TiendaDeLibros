@@ -1,3 +1,5 @@
+namespace TiendaLibros.Entidades;
+
 public class Producto
 {
     public Guid Id { get; set; }

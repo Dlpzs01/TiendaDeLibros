@@ -1,3 +1,5 @@
+namespace TiendaLibros.Entidades;
+
 public class Categoria
 {
     public Guid Id { get; set; }
